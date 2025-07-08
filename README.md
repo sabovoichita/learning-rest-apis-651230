@@ -18,7 +18,6 @@ INFO:     Application startup complete.
 ```
 
 > [!CAUTION]
-# and is only accessible from within the Codespace.
 > This repo contains a live `.env` file and `.gitignore` does not ignore this file. In normal circumstances this would be a security issue and __strongly__ discouraged. This repo is an exceptional exception because the database server the `.env` file provides access to only exists in the virtual Codespaces environment. If you are not comfortable with having a live `.env` file in your fork, add `.env` to `.gitignore` and use the `.env.devcontainer` file as your template.
 __DO NOT PUSH THIS REPO AS-IS TO PRODUCTION!__
 
