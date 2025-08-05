@@ -4,6 +4,10 @@ This is the repository for the LinkedIn Learning course `Learning REST APIs`. Th
 
 ![course-name-alt-text][lil-thumbnail-url]
 
+## Course Description
+
+Learn the basics of REST APIs. In this course, discover what REST APIs are, why they matter, and how putting them to use can help you build faster, more efficient applications. Review how HTTP and REST APIs relate, explore the six constraints of REST, and learn about HTTP status messages. Learn how to get started with consuming REST APIs to incorporate them into data-driven applications.
+
 ## Instructions
 
 This repository serves as a practice environment for interacting with a database server through a REST API. When you open the repository in GitHub Codespaces, it spins up and populates a private database server with dummy content you can use to practice creating, retrieving, updating, modifying, and deleteting data through a typical REST API.
@@ -44,5 +48,5 @@ The database is auto-populated with the contents of `init_db.py`. If you want to
 Use of the REST API is covered in the course. You'll also find comprehensive documentation of the REST API in `DOCUMENTATION.md`.
 
 [0]: # "Replace these placeholder URLs with actual course URLs"
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
+[lil-course-url]: https://www.linkedin.com/learning/learning-rest-apis
+[lil-thumbnail-url]: https://cdn.lynda.com/course/651230/651230-1564006888040-16x9.jpg
