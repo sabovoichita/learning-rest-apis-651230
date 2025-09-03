@@ -161,3 +161,12 @@ PATCH  {{baseURL}}/books/9780743273565
   "genre": "Fiction",
   "location": "3rd Floor, A-12"
 }
+###
+GET {{baseURL}}/users
+###
+
+DELETE  {{baseURL}}/users/111111
+###
+
+GET {{baseURL}}/users
+###
