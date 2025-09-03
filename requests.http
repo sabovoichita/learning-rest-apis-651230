@@ -1,1 +1,25 @@
 # Separate each request with a new line, then ###, then a new line.
+OPTIONS https://restful.dev/wp-json/wp/v2/posts
+###
+@baseURL https://congenial-fiesta-v44w65r9q66hpw7q-8000.app.github.dev/
+# Separate each request with a new line, then ###, then a new line.
+OPTIONS https://restful.dev/wp-json/wp/v2/posts
+###
+GET {{baseURL}}/users
+
+###
+GET {{baseURL}}/users/987654
+###
+GET {{baseURL}}/users/123456
+###
+GET {{baseURL}}/users/555555
+
+###
+GET {{baseURL}}/books/9780316769174
+###
+GET {{baseURL}}/books/9780743273565
+###
+GET {{baseURL}}/books/9780452284234
+###
+GET {{baseURL}}/books/9780061120084
+###
