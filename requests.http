@@ -1,6 +1,3 @@
-# Separate each request with a new line, then ###, then a new line.
-OPTIONS https://restful.dev/wp-json/wp/v2/posts
-###
 @baseURL https://congenial-fiesta-v44w65r9q66hpw7q-8000.app.github.dev/
 # Separate each request with a new line, then ###, then a new line.
 OPTIONS https://restful.dev/wp-json/wp/v2/posts
@@ -23,3 +20,34 @@ GET {{baseURL}}/books/9780452284234
 ###
 GET {{baseURL}}/books/9780061120084
 ###
+# GET request
+GET {{baseURL}}/users
+
+###
+
+# POST request 
+POST {{baseURL}}/users
+Content-Type: application/json
+
+{
+  "name": "Header Test",
+  "email": "headers1@example.com",
+  "address": "456 Header Ave",
+  "phoneNumber": "5559998877"
+}
+###
+# Error request (non-existent user)
+
+GET {{baseURL}}/users/987657
+###
+POST {{baseURL}}/users
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "test1@example.com",
+  "address": "123 Test St",
+  "phoneNumber": "5551234567"
+}
+###
+GET {{baseURL}}/users/987658
