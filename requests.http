@@ -31,23 +31,133 @@ Content-Type: application/json
 
 {
   "name": "Header Test",
-  "email": "headers1@example.com",
+  "email": "headers@example.com",
   "address": "456 Header Ave",
   "phoneNumber": "5559998877"
 }
 ###
 # Error request (non-existent user)
 
-GET {{baseURL}}/users/987657
+GET {{baseURL}}/users/999999
 ###
 POST {{baseURL}}/users
 Content-Type: application/json
 
 {
   "name": "Test User",
-  "email": "test1@example.com",
+  "email": "test@example.com",
   "address": "123 Test St",
   "phoneNumber": "5551234567"
 }
 ###
-GET {{baseURL}}/users/987658
+
+POST {{baseURL}}/users
+Content-Type: application/json
+{
+  "name": "Jane Smith",
+
+  "email": "jane@example.com",
+
+  "address": "456 Oak Ave",
+
+  "phoneNumber": "5556667777"
+
+}
+###
+
+POST /users - Create new user
+
+Request body:
+
+{
+
+  "name": "ceva",
+
+  "email": "ceva@yahoo.com",
+
+  "address": "ceva1 st",
+
+  "phoneNumber": "123456"
+
+}
+###
+
+PUT {{baseURL}}/users/987654
+Content-Type: application/json
+
+{
+  "name": "Nathaniel Cayden",
+  "email": "nathaniel@example.com",
+  "address": "5432 Street",
+  "phoneNumber": "5555555555"
+}
+###
+
+PATCH {{baseURL}}/users/987654
+Content-Type: application/json
+
+{
+  "phoneNumber": "5559876543",
+  "address": "42 Other Avenue"
+}
+###
+
+PATCH {{baseURL}}/users/987654
+Content-Type: application/json
+
+{
+  "name": "Nathaniel Co",
+  "email": "nathCo@example.com",
+  "address": "5432 St",
+  "phoneNumber": "55555555"
+}
+###
+GET {{baseURL}}/users/987654
+###
+
+PUT {{baseURL}}/users/987654
+Content-Type: application/json
+
+{
+  "name": "Nathaniel C",
+  "email": "nath@example.com",
+  "address": "5432 St",
+  "phoneNumber": "55555555"
+}
+
+###
+GET {{baseURL}}/users/987654
+###
+GET {{baseURL}}/books/9780743273565
+###
+PUT {{baseURL}}/books/9780743273565
+
+#Request body (all fields required):
+
+{
+ "isbn": 9780743273565,
+  "title": "The Great Gatsby Modified",
+  "author": "F. Scott Fitzgerald",
+  "publisher": "Scribner",
+  "year": 1925,
+  "pages": 180,
+  "genre": "Fiction",
+  "location": "3rd Floor, A-12"
+}
+###
+GET {{baseURL}}/books/9780743273565
+###
+PATCH  {{baseURL}}/books/9780743273565
+
+#Request body (all fields required):
+
+{
+ "isbn": 9780743273565,
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "publisher": "Scribner???",
+  "year": 1925,
+  "pages": 180,
+  "genre": "Fiction",
+  "location": "3rd Floor, A-12"
+}
